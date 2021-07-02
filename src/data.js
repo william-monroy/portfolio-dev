@@ -1,4 +1,5 @@
-export const featuredPortfolio = [{
+export const featuredPortfolio = [
+    {
         id: 1,
         title: "Nebula",
         img: "https://i.postimg.cc/kGtRg9wZ/Nebula.png",
