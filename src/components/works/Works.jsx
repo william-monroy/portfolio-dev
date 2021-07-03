@@ -36,7 +36,7 @@ const Works = () => {
     ];
 
     const handleClick = (way) => {
-        way=="left" ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : 2) : 
+        way==="left" ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : 2) : 
         setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
     }
 
@@ -66,8 +66,8 @@ const Works = () => {
                     </div>
                 ))}
             </div>
-            <img src="assets/arrow.png" className="arrow left" onClick={()=>handleClick("left")}/>
-            <img src="assets/arrow.png" className="arrow right" onClick={()=>handleClick("right")}/>
+            <img src="assets/arrow.png" className="arrow left" onClick={()=>handleClick("left")} alt="arrow" />
+            <img src="assets/arrow.png" className="arrow right" onClick={()=>handleClick("right")} alt="arrow" />
         </div>
     )
 }
