@@ -7,6 +7,7 @@ import Contact from './components/contact/Contact';
 import './app.scss';
 import {useState} from 'react';
 import Menu from './components/menu/Menu';
+import Hero from './hero/Hero';
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
-        <Intro />
+        <Hero />
+        {/* <Intro /> */}
         <Portfolio />
         <Works />
         <Testimonials />

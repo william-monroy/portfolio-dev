@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .testimonials{
-    background-color: white;
+    background-color: $mainBack;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,6 +12,7 @@
 
     h1{
         font-size: 50px;
+        color: $mainTextColor;
 
         @include mobile{
             font-size: 20px;
@@ -40,6 +41,7 @@
             justify-content: space-around;
             padding: 20px;
             transition: all 1s ease;
+            background-color: $secondaryColor;
 
             @include mobile{
                 height: 180px;
@@ -106,6 +108,7 @@
 
                 h3{
                     margin-bottom: 5px;
+                    color: $mainTextColor;
 
                     @include mobile{
                         font-size: 14px;
@@ -114,7 +117,7 @@
 
                 h4{
                     text-align: center;
-                    color: gray;
+                    color: $secondaryTextColor;
 
                     @include mobile{
                         font-size: 13px;

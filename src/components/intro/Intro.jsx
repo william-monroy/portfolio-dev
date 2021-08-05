@@ -12,7 +12,7 @@ const Intro = () => {
             //backDelay:1500,
             backDelay:500,
             backSpeed: 60,
-            strings: ["Developer", "Microsoft Learn Student Ambassador", "Google Developer Student Club Lead"],
+            strings: ["Web Developer", "Microsoft Learn Student Ambassador", "Open Source Contributor"],
         });
     }, [])
 

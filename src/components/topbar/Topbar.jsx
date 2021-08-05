@@ -6,7 +6,9 @@ const Topbar = ({menuOpen, setMenuOpen}) => {
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo">LOGO</a>
+                    <a href="#intro" className="logo">
+                        <img src="assets\logo_william_ligth.png" alt="LOGO" />
+                    </a>
                     <div className="itemContainer">
                         <Person className="icon"/>
                         <span>+51935995979</span>
