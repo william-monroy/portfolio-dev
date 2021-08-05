@@ -71,11 +71,11 @@
         }
 
         #blobSvg {
-            z-index: 10;
+            z-index: 5;
         }
 
         #blobSvg1 {
-            z-index: 9;
+            z-index: 4;
             align-items: center;
             justify-content: center;
         }
@@ -86,7 +86,7 @@
             align-items: center;
             margin: 15vh 12vw;
             position: absolute;
-            z-index: 100;
+            z-index: 5;
         }
 
         .bubble {
@@ -103,19 +103,19 @@
             #firebase {
                 margin-top: 50vh;
                 margin-left: 100px;
-                z-index: 101;
+                z-index: 6;
             }
 
             #react {
                 margin-top: 30vh;
                 margin-left: 60px;
-                z-index: 101;
+                z-index: 6;
             }
 
             #js {
                 margin-top: 15vh;
                 margin-left: 600px;
-                z-index: 101;
+                z-index: 6;
             }
         }
 
@@ -129,7 +129,7 @@
             padding-bottom: 20px;
             padding-left: 10px;
             padding-right: 30px;
-            z-index: 101;
+            z-index: 6;
 
             background: rgba(106, 110, 147, 0.80);
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -145,6 +145,7 @@
                 padding: 10px;
                 align-items: center;
                 justify-content: center;
+
             }
 
             .card-right {
@@ -178,10 +179,727 @@
             font-weight: 500;
             margin-bottom: 5px;
         }
-        
+
         p {
             color: #D6D6E0;
             font-weight: 300;
+        }
+    }
+}
+
+@media (max-width: 1780px) {
+
+    #card1,
+    #card2 {
+        display: none;
+    }
+}
+
+@media (max-width: 1580px) {
+    .hero {
+        .left {
+            justify-content: center;
+        }
+
+        .right {
+            #profile {
+                width: 300px;
+                // display: none;
+            }
+
+            .bubble {
+                #js {
+                    margin-top: 15vh;
+                    margin-left: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .hero {
+        .left {
+            justify-content: center;
+        }
+
+        .right {
+            #profile {
+                width: 250px;
+                // display: none;
+            }
+
+            .bubble {
+                #js {
+                    margin-top: 15vh;
+                    margin-left: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1090px) {
+    .hero {
+        .left {
+            justify-content: center;
+            flex: 0.6;
+        }
+        
+        .right {
+            flex: 0.4;
+
+            #profile {
+                width: 180px;
+                margin: 10vh 10vw;
+                // display: none;
+            }
+
+            .bubble {
+                #js {
+                    margin-top: 8vh;
+                    margin-left: 250px;
+                }
+                #react {
+                    margin-top: 17vh;
+                    margin-left: 20px;
+                }
+                
+                #firebase {
+                    margin-top: 32vh;
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 975px) {
+    .hero {
+        .left {
+            justify-content: center;
+            flex: 0.6;
+        }
+        
+        .right {
+            flex: 0.4;
+
+            #profile {
+                width: 150px;
+                margin: 10vh 10vw;
+                // display: none;
+            }
+
+            .bubble {
+                #js {
+                    margin-top: 8vh;
+                    margin-left: 250px;
+                }
+                #react {
+                    margin-top: 17vh;
+                    margin-left: 20px;
+                }
+                
+                #firebase {
+                    margin-top: 32vh;
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 920px) {
+    .hero {
+        flex-direction: column-reverse;
+        
+        .left {
+            justify-content: center;
+            flex: 1;
+            position: absolute;
+            z-index: 2;
+        }
+        
+        .right {
+            flex: 1;
+            opacity: 0.4;
+            position: relative;
+            z-index: 1;
+            margin-left: 0;
+                
+            #blobSvg {
+                transform: scale(1.2);
+                overflow-y: hidden;
+                
+                z-index: 5;
+            }
+    
+            #blobSvg1 {
+                z-index: 4;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #profile {
+                display: none;
+            }
+
+            .bubble {
+                #js {
+                    margin-top: 12vh;
+                    margin-left: 650px;
+                }
+                #react {
+                    margin-top: 60vh;
+                    margin-left: 550px;
+                }
+                
+                #firebase {
+                    margin-top: 75vh;
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 750px) {
+    .hero {
+        flex-direction: column-reverse;
+        
+        .left {
+            justify-content: center;
+            flex: 1;
+            position: absolute;
+            z-index: 2;
+        }
+        
+        .right {
+            flex: 1;
+            opacity: 0.4;
+            position: relative;
+            z-index: 1;
+            margin-left: 0;
+                
+            #blobSvg {
+                transform: scale(1.2);
+                overflow-y: hidden;
+                
+                z-index: 5;
+            }
+    
+            #blobSvg1 {
+                z-index: 4;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #profile {
+                display: none;
+            }
+
+            .bubble {
+                #js {
+                    margin-top: 12vh;
+                    margin-left: 600px;
+                }
+                #react {
+                    margin-top: 60vh;
+                    margin-left: 500px;
+                }
+                
+                #firebase {
+                    margin-top: 75vh;
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column-reverse;
+        
+        .left {
+            justify-content: center;
+            flex: 1;
+            position: absolute;
+            z-index: 2;
+        }
+        
+        .right {
+            flex: 1;
+            opacity: 0.4;
+            position: relative;
+            z-index: 1;
+            margin-left: 0;
+                
+            #blobSvg {
+                transform: scale(1.2);
+                overflow-y: hidden;
+                
+                z-index: 5;
+            }
+    
+            #blobSvg1 {
+                z-index: 4;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #profile {
+                display: none;
+            }
+
+            .bubble {
+                #js {
+                    margin-top: 12vh;
+                    margin-left: 550px;
+                }
+                #react {
+                    margin-top: 60vh;
+                    margin-left: 450px;
+                }
+                
+                #firebase {
+                    margin-top: 75vh;
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 650px) {
+    .hero {
+        flex-direction: column-reverse;
+        
+        .left {
+            justify-content: center;
+            flex: 1;
+            position: absolute;
+            z-index: 2;
+        }
+        
+        .right {
+            flex: 1;
+            opacity: 0.4;
+            position: relative;
+            z-index: 1;
+            margin-left: 0;
+                
+            #blobSvg {
+                transform: scale(1.2);
+                overflow-y: hidden;
+                
+                z-index: 5;
+            }
+    
+            #blobSvg1 {
+                z-index: 4;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #profile {
+                display: none;
+            }
+
+            .bubble {
+                #js {
+                    margin-top: 12vh;
+                    margin-left: 500px;
+                }
+                #react {
+                    margin-top: 60vh;
+                    margin-left: 400px;
+                }
+                
+                #firebase {
+                    margin-top: 75vh;
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column-reverse;
+        
+        .left {
+            justify-content: center;
+            flex: 1;
+            position: absolute;
+            z-index: 2;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        
+        .right {
+            flex: 1;
+            opacity: 0.4;
+            position: relative;
+            z-index: 1;
+            margin-left: 0;
+                
+            #blobSvg {
+                transform: scale(1.2);
+                overflow-y: hidden;
+                
+                z-index: 5;
+            }
+    
+            #blobSvg1 {
+                z-index: 4;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #profile {
+                display: none;
+            }
+
+            .bubble {
+                #js {
+                    margin-top: 12vh;
+                    margin-left: 450px;
+                }
+                #react {
+                    margin-top: 60vh;
+                    margin-left: 350px;
+                }
+                
+                #firebase {
+                    margin-top: 75vh;
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 540px) {
+    .hero {
+        flex-direction: column-reverse;
+        
+        .left {
+            justify-content: center;
+            flex: 1;
+            position: absolute;
+            z-index: 2;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        
+        .right {
+            flex: 1;
+            opacity: 0.4;
+            position: relative;
+            z-index: 1;
+            margin-left: 0;
+                
+            #blobSvg {
+                transform: scale(2.2);
+                overflow-y: hidden;
+                
+                z-index: 5;
+            }
+    
+            #blobSvg1 {
+                z-index: 4;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #profile {
+                display: none;
+            }
+
+            .bubble {
+                #js {
+                    margin-top: 12vh;
+                    margin-left: 250px;
+                }
+                #react {
+                    margin-top: 60vh;
+                    margin-left: 350px;
+                }
+                
+                #firebase {
+                    margin-top: 75vh;
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .hero {
+        flex-direction: column-reverse;
+        
+        .left {
+            justify-content: center;
+            flex: 1;
+            position: absolute;
+            z-index: 2;
+            padding-left: 40px;
+            padding-right: 40px;
+
+            
+            h4 {
+                font-size: 1rem;
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+                margin-left: -0.5rem;
+            }
+    
+            h3 {
+                font-size: 2em;
+            }
+    
+            h2 {
+                font-size: 3em;
+                margin-top: -10px;
+                margin-bottom: 20px;
+            }
+    
+            .text {
+                color: #cdcdd1;
+                font-size: 15px;
+                font-weight: 300;
+            }
+    
+            button {
+                margin-top: 30px;
+                border: none;
+                border-radius: 10px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 15px;
+                background-color: #2553FE;
+                color: #FFFFFF;
+            }
+        }
+        
+        .right {
+            flex: 1;
+            opacity: 0.4;
+            position: relative;
+            z-index: 1;
+            margin-left: 0;
+                
+            #blobSvg {
+                transform: scale(2.2);
+                overflow-y: hidden;
+                
+                z-index: 5;
+            }
+    
+            #blobSvg1 {
+                z-index: 4;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #profile {
+                display: none;
+            }
+
+            .bubble {
+                #js {
+                    margin-top: 12vh;
+                    margin-left: 200px;
+                }
+                #react {
+                    margin-top: 70vh;
+                    margin-left: 250px;
+                }
+                
+                #firebase {
+                    margin-top: 80vh;
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .hero {
+        flex-direction: column-reverse;
+        
+        .left {
+            justify-content: center;
+            flex: 1;
+            position: absolute;
+            z-index: 2;
+            padding-left: 40px;
+            padding-right: 40px;
+
+            h4 {
+                font-size: 1rem;
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+                margin-left: -0.5rem;
+            }
+    
+            h3 {
+                font-size: 2em;
+            }
+    
+            h2 {
+                font-size: 3em;
+                margin-top: -10px;
+                margin-bottom: 20px;
+            }
+    
+            .text {
+                color: #cdcdd1;
+                font-size: 15px;
+                font-weight: 300;
+            }
+    
+            button {
+                margin-top: 30px;
+                border: none;
+                border-radius: 10px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 15px;
+                background-color: #2553FE;
+                color: #FFFFFF;
+            }
+        }
+        
+        .right {
+            flex: 1;
+            opacity: 0.4;
+            position: relative;
+            z-index: 1;
+            margin-left: 0;
+                
+            #blobSvg {
+                transform: scale(2.2);
+                overflow-y: hidden;
+                
+                z-index: 5;
+            }
+    
+            #blobSvg1 {
+                z-index: 4;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #profile {
+                display: none;
+            }
+
+            .bubble {
+                #js {
+                    margin-top: 12vh;
+                    margin-left: 200px;
+                }
+                #react {
+                    margin-top: 70vh;
+                    margin-left: 250px;
+                }
+                
+                #firebase {
+                    margin-top: 78vh;
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 335px) {
+    .hero {
+        flex-direction: column-reverse;
+        
+        .left {
+            justify-content: center;
+            flex: 1;
+            position: absolute;
+            z-index: 2;
+            padding-left: 40px;
+            padding-right: 40px;
+
+            h4 {
+                font-size: 1rem;
+                font-weight: 500;
+                margin-bottom: 0.5rem;
+                margin-left: -0.5rem;
+            }
+    
+            h3 {
+                font-size: 2em;
+            }
+    
+            h2 {
+                font-size: 3em;
+                margin-top: -10px;
+                margin-bottom: 20px;
+            }
+    
+            .text {
+                color: #cdcdd1;
+                font-size: 15px;
+                font-weight: 300;
+            }
+    
+            button {
+                margin-top: 30px;
+                border: none;
+                border-radius: 10px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 15px;
+                background-color: #2553FE;
+                color: #FFFFFF;
+            }
+        }
+        
+        .right {
+            flex: 1;
+            opacity: 0.4;
+            position: relative;
+            z-index: 1;
+            margin-left: 0;
+                
+            #blobSvg {
+                transform: scale(2.2);
+                overflow-y: hidden;
+                
+                z-index: 5;
+            }
+    
+            #blobSvg1 {
+                z-index: 4;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #profile {
+                display: none;
+            }
+
+            .bubble {
+                #js {
+                    margin-top: 15vh;
+                    margin-left: 150px;
+                }
+                #react {
+                    margin-top: 72vh;
+                    margin-left: 150px;
+                }
+                
+                #firebase {
+                    margin-top: 78vh;
+                    margin-left: 30px;
+                }
+            }
         }
     }
 }
